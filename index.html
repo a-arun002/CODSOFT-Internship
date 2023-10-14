@@ -1,72 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Arun's Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+	<button onclick="appendToDisplay('/')">/</button>
+        <button onclick="clearDisplay()">C</button>
+    </div>
 
-    <section id="hero">
-        <h1>Welcome to Our Awesome Website</h1>
-        <p>Discover Our Amazing Features</p>
-        <a href="#features" class="cta-button">Get Started</a>
-    </section>
-
-    <section id="features">
-        <div class="container">
-            <h2>Our Features</h2>
-            <div class="feature">
-                <img src="artificial intelligence.jpeg" alt="Artificial Intelligence">
-                <h3>Artificial Intelligence</h3>
-                <p>AI uses multiple technologies that equip machines to sense, comprehend, plan, act, and learn with human-like levels of intelligence. Fundamentally, AI systems perceive environments, recognize objects, contribute to decision making, solve complex problems, learn from past experiences, and imitate patterns.</p>
-            </div>
-            <div class="feature">
-                <img src="data science.jpeg" alt="Data Science">
-                <h3>Data Science</h3>
-                <p>Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI), and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization's data.</p>
-            </div>
-            <div class="feature">
-                <img src="web development.jpeg" alt="Web Development">
-                <h3>Web Development</h3>
-                <p>This involves writing clean and efficient code using languages such as HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue. js.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We offer internships in a variety of fields, including Artificial Intelligence, Data Science and Web Development. Our interns have the opportunity to work on real-world projects, learn from experienced professionals, and make a real difference in the company.</p>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions or need assistance? Reach out to us!</p>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Our Awesome Website</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
