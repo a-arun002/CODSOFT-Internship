@@ -4,58 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>A. ARUN - Portfolio</title>
+    <title>Arun's Landing Page</title>
 </head>
 <body>
     <header>
-        <h1>A. ARUN</h1>
-        <p>Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <section id="hero">
+        <h1>Welcome to Our Awesome Website</h1>
+        <p>Discover Our Amazing Features</p>
+        <a href="#features" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature">
+                <img src="artificial intelligence.jpeg" alt="Artificial Intelligence">
+                <h3>Artificial Intelligence</h3>
+                <p>AI uses multiple technologies that equip machines to sense, comprehend, plan, act, and learn with human-like levels of intelligence. Fundamentally, AI systems perceive environments, recognize objects, contribute to decision making, solve complex problems, learn from past experiences, and imitate patterns.</p>
+            </div>
+            <div class="feature">
+                <img src="data science.jpeg" alt="Data Science">
+                <h3>Data Science</h3>
+                <p>Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI), and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization's data.</p>
+            </div>
+            <div class="feature">
+                <img src="web development.jpeg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>This involves writing clean and efficient code using languages such as HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue. js.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="about">
-        <h2>About Me</h2>
-        <img src="Photo.jpeg" alt="A. Arun">
-        <p>Hi, I am Arun. Currently, I am pursuing B-Tech(A.I&D.S) in Panimalar Institute of Technology.</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Portfolio using HTML and CSS.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Landing using HTML and CSS.</p>
-        </div>
-	<div class="project">
-            <h3>Project 3</h3>
-            <p>Calculator using JAVA, HTML and CSS.</p>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We offer internships in a variety of fields, including Artificial Intelligence, Data Science and Web Development. Our interns have the opportunity to work on real-world projects, learn from experienced professionals, and make a real difference in the company.</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
     </section>
-    
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my <a href="Resume.pdf" download>resume</a>.</p>
-    </section>
-    
+
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:youremail@example.com">samplemail123@gmail.com</a></p>
-        <p>Phone: (+91) 1234567890</p>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
-    
+
     <footer>
-        &copy; 2023 A. Arun
+        <p>&copy; 2023 Our Awesome Website</p>
     </footer>
 </body>
 </html>
